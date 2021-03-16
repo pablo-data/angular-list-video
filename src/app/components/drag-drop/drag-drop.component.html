@@ -1,0 +1,7 @@
+<div cdkDropList class="list-video" (cdkDropListDropped)="drop($event)">
+    <div class="box-list-video" *ngFor="let video of videos" cdkDrag>
+        {{video.title}}
+        <button mat-flat-button color="warn" (click)="playVideo(video)">PLAY</button>
+    </div>
+    
+</div>

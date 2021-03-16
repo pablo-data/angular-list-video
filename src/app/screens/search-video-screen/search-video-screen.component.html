@@ -1,0 +1,13 @@
+<!---Arreglar esto-->
+<div class="search-video">
+    <div class="search-bar">
+    <app-search-bar (formEmitter)="getForm($event)" (nameEmitter)="sendName($event)"></app-search-bar>
+    </div>
+    <div class="search-button">
+    <app-button-search (nameEmitter)="sendName($event)" [videoForm]="videoForm"></app-button-search>
+    </div>
+</div>
+
+<div class="video-group">
+    <app-videos-group [videoName]="videoName"></app-videos-group>
+</div>

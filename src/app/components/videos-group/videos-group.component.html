@@ -1,0 +1,7 @@
+<div class="group-video">
+<mat-card *ngFor="let video of videos" class="card-video">
+    <img mat-card-image src="{{video.snippet.thumbnails.high.url}}" alt="videos">
+    <mat-card-subtitle>{{video.snippet.title}}</mat-card-subtitle>
+    <button mat-flat-button color="primary" (click)="addVideo(video)">Listar Video</button>
+</mat-card>
+</div>

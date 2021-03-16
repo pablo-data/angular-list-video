@@ -1,0 +1,8 @@
+<div class="content">
+    <div class="video">
+        <app-box-video [videoObject]="videoObject" [videoList]="videoList"></app-box-video>
+    </div>
+    <div class="list-video">
+        <app-drag-drop (videoEmitter)="sendVideo($event)" (listVideosEmitter)="sendList($event)"></app-drag-drop>
+    </div>
+</div>

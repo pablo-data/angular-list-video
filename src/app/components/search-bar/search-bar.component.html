@@ -1,0 +1,7 @@
+<form (keyup.enter)="enterElement(videoForm)" [formGroup]="videoForm">
+<mat-form-field  class="form-field">
+    <mat-label>Busca un video...</mat-label>
+    <input [formControlName]="'videoName'" matInput type="text" [(ngModel)]="value">
+  </mat-form-field>
+
+</form>

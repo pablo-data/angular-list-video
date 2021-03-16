@@ -1,0 +1,19 @@
+<mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{videoObject.title}}</mat-card-title>
+    </mat-card-header>
+
+    <youtube-player [width]="600" [videoId]="url" (ready)="PlayerEvent($event)" (stateChange)="OnStateChangeEvent($event)"></youtube-player>
+
+ <!--<iframe class="movie" [src]="videoUrl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    <mat-card-content>
+      <p>
+        {{videoObject.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="like" mat-button>LIKE ME</button >
+      <button class="not-like" mat-button>DON'T LIKE ME</button>
+    </mat-card-actions>
+  </mat-card>
